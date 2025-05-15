@@ -3,3 +3,129 @@ body {
 	margin: 0;
 	background-color: #111;
 }
+.parent {
+	display: inline-flex;
+}
+.child {
+
+}
+#header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	position: sticky;
+	z-index: 1;
+	top: 0px;
+	height: 75px;
+	opacity: 1;
+	box-sizing: border-box;
+	border-bottom: 3px solid #ffa50b;
+	transition: 0.5s;
+  background: rgba(17, 17, 17, 1);
+  backdrop-filter: blur(10px);
+  padding-top: p5x;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#header button {
+	border: 0;
+	background-color: transparent;
+}
+.searchbar input{
+	background-color: rgba(17, 17, 17, 1.0);
+	border: 1px solid #ffa50b;
+	color: #ffa50b;
+}
+.searchbar input[type=text]{
+	margin-left: 30px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	height: 30px;
+	padding: 5px;
+} ::placeholder {color: #ffa50b; opacity: 0.3}
+.searchbar input[type=submit]{
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	height: 30px;
+	padding: none;
+
+}
+#container{
+	display: flex;
+	height: 100vh;
+	border: 5px solid hotpink;
+	background-color: cyan;
+	padding: 0px 250px;
+	transition: 0.5s ;
+}
+.logo {
+	transition: 0.5s;
+}
+
+.allmanga {
+	margin: 20px 0px;
+	width: 100%;
+	height: 400vh;
+	border: 5px dotted orange;
+}
+
+.sidenav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 10px;
+	opacity: 0;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	border-right: 2px solid #ffa50b;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+.sidenav button {
+	border: 0;
+	background-color: transparent;
+}
+.sidenav a {
+	padding: 5px 8px 5px 32px;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: monospace;
+	color: #999;
+	display: block;
+	transition: 0.3s;
+}.sidenav a:hover {color: #f1f1f1;}
+.sidenav .closebtn {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	top: 11px;
+	left: 10px;
+	font-size: 36px;
+}
+.logobtn{ 
+	position: absolute;
+	top: 10px;
+	left: 50px;
+}
+.openbtn{margin-left: 180px;}
+.closebtn{
+	margin-top: 25px;
+	margin-left:230px;
+	transition: 0.3s;
+}
+.closebtn:hover {
+	margin-left: 215px;
+}
+
+::-webkit-scrollbar {width: 5px;}
+::-webkit-scrollbar-track {background: #111;}
+::-webkit-scrollbar-thumb {background: #111;}
+::-webkit-scrollbar-thumb:hover {background: #ffa50b;}
