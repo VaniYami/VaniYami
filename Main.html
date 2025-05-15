@@ -3,13 +3,52 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>VaniYami</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="vyscript.js"></script>
+	<title>MangaMango</title>
+	<link rel="stylesheet" type="text/css" href="mmstyle.css">
+	<script type="text/javascript" src="mmscript.js"></script>
 </head>
 <body>
-	<div class="main">
-		<h1>This is a Test</h1>
+	<div class="parent header" id="header">
+		<button class="openbtn" onclick="openNav()" style="width: 50px; height: 50px;">
+			<img style="width: 30px;height: 30px;" src="images/menu.png">
+		</button>
+		<a href="facebook.com">
+			<img class="logo" style="width: 100px;" src="images/mangamango.png">
+		</a>
+		<div class="child searchbar">
+			<input placeholder="Search" type="text" name="">
+			<input type="submit" name="">
+		</div>
+	</div>
+	
+	<div class="sidenav" id="mySidenav">
+
+		<button onclick="document.location='default.asp'">>
+			<img class="logobtn" style="width: 150px;" src="images/mangamango.png">
+		</button>
+		<button style="color: white; " class="closebtn" onclick="closeNav()">
+			<div style="
+				background-color: #ffa50b;
+				width: 3px;
+				height: 50px;
+				color: #ffa50b;
+			"></div>
+		</button>
+		<a href="#">Updates</a>
+		<a href="#">History</a>
+		<a href="#">Saves</a>
+		<a style="margin-bottom: 30px;" href="#">Contact</a>
+		<a href="#">About</a>
+		<a href="#">Services</a>
+		<a href="#">Clients</a>
+		<a style="margin-bottom: 30px;" href="#">Contact</a>
+	</div>
+
+	<div class="parent" id="container">
+		<img src="images/.jpg">
+		<div class="allmanga">
+
+		</div>
 	</div>
 </body>
 </html>
