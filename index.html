@@ -8,19 +8,21 @@
 	<script type="text/javascript" src="vyscript.js"></script>
 </head>
 <body>
+	<!-- Header -->
 	<div class="parent header" id="header">
-		<button class="openbtn" onclick="openNav()" style="width: 50px; height: 50px;">
-			<img style="width: 30px;height: 30px;" src="images/Osu!_Logo_2016.svg">
+		<button class="openbtn logo top" onclick="openNav()" style="width: 40px; height: 40px;margin-right: 25px;">
+			<img class="logo top" style="width: 40px;height: 40px;" src="images/Osu!_Logo_2016.svg">
 		</button>
 		<a href="facebook.com">
-			<img class="logo" style="width: 100px;" src="images/">
+			<img class="top" style="width: 100px; border-radius: 10%;" src="images/team.jpg">
 		</a>
 	</div>
 	
+	<!-- Sidenav -->
 	<div class="sidenav" id="mySidenav">
 
-		<button onclick="document.location='default.asp'">>
-			<img class="logobtn" style="width: 150px;" src="images/mangamango.png">
+		<button onclick="document.location='default.asp'">
+			<img class="logobtn" style="width: 150px;" src="images/team.jpg">
 		</button>
 		<button style="color: white; " class="closebtn" onclick="closeNav()">
 			<div style="
@@ -39,14 +41,56 @@
 		<a href="#">Clients</a>
 		<a style="margin-bottom: 30px;" href="#">Contact</a>
 	</div>
+<div class="parent" id="container">
+	<div class="main">
+		<!-- Section 1: Header -->
+		<div class="submain" style="background-color: #a83e67;">
+			<h1 style="margin: 0;">osu! Player Info</h1>
+		</div>
 
-	<div class="parent" id="container">
-		<div class="main">
-			<div class="submain" style="height: 30px;"><h1>Player Info</h1></div>
-			<div class="submain" style="height: 50px;
-										background-color: #121212;"><h1>Gay Porn</h1></div>
+		<!-- Section 2: Basic Info -->
+		<div class="submain" style="background-color: #1a1a1a; display: flex; align-items: center; gap: 20px;">
+			<img src="images/avatar.jpg" alt="Avatar" style="width: 80px; height: 80px; border-radius: 10%;">
+			<div>
+				<h2 style="margin: 0; color: #fff;">M4STERBEATER15</h2>
+				<p style="margin: 0; color: #ccc;">🇯🇵 Japan • Global Rank #0000</p>
+			</div>
+		</div>
 
+		<!-- Section 3: Stats -->
+		<div class="submain" style="background-color: #222; display: flex; justify-content: space-around; text-align: center;">
+			<div>
+				<h3 style="color: #fff;">Performance</h3>
+				<p style="color: #ccc;">0000pp</p>
+			</div>
+			<div>
+				<h3 style="color: #fff;">Accuracy</h3>
+				<p style="color: #ccc;">00.00%</p>
+			</div>
+			<div>
+				<h3 style="color: #fff;">Play Count</h3>
+				<p style="color: #ccc;">0000 plays</p>
+			</div>
+		</div>
+
+		<!-- Section 4: Additional Info -->
+		<div class="submain" style="background-color: #2a2a2a;">
+			<h3 style="color: #fff;">Favorite Mods</h3>
+			<p style="color: #ccc;">HD, HR, DT</p>
+			<h3 style="color: #fff;">Level</h3>
+			<p style="color: #ccc;">Lv. 100</p>
+		</div>
+
+		<!-- Section 5: About / Description -->
+		<div class="submain" style="background-color: #333;">
+			<h3 style="color: #fff;">About Me</h3>
+			<p style="color: #ccc;">
+				Hi! I'm a casual osu! player who loves rhythm games and playing HDHR maps.
+				Feel free to download my skins or check out my top plays below!
+			</p>
 		</div>
 	</div>
+</div>
+
 </body>
 </html>
