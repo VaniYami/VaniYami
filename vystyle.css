@@ -4,9 +4,14 @@ body {
 	background-color: #111;
 }
 .parent {
-	display: inline-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 .child {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 
 }
 #header {
@@ -70,10 +75,13 @@ body {
 }
 .submain {
 	background-color: #a83e67;
-	padding: 10px;
+	padding: 25px;
 }
 .logo {
 	transition: 0.5s;
+}
+.logo:hover {
+	transform: rotate(360deg);
 }
 
 
