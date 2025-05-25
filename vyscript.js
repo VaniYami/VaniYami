@@ -1,20 +1,25 @@
 window.addEventListener("scroll", function () {
     let header = document.getElementById("header");
     let logo = document.querySelector(".logo");
+    let top = document.querySelector(".top");
 
     if (window.scrollY < 50) {
-        header.style.backgroundImage = "url('images/Osu!_Header2.png')";
-        header.style.height = "75px";
+        header.style.background = "url('images/Osu!_Header2.png')";
+        header.style.height = "80px"; 
         header.style.borderBottom = "2px solid #a83e67";
-        logo.style.width = "100px";
+        logo.style.width = "50px"; 
+        top.style.width = "50px";
+        top.style.height = "50px";
 
-    } else {        
-        header.style.backgroundImage = "linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('images/Osu!_Header2.png')";
-        header.style.height = "50px";
+    } else {
+        header.style.background = "linear-gradient(to bottom, rgba(168, 62, 103, 0.9), rgba(168, 62, 103, 0))";
+        header.style.height = "60px"; 
         header.style.borderBottom = "2px solid transparent";
         header.style.backdropFilter = "blur(10px)";
         header.style.borderBottom = "none";
-        logo.style.width = "75px";
+        logo.style.width = "50px";
+        top.style.width = "40px";
+        top.style.height = "40px";
     }
 });
 function openNav() {
